@@ -111,7 +111,7 @@ public final class VolumeApplicators {
         return (volume, element) -> volume.spawnEntity(element.type());
     }
 
-    public static <M extends BiomeVolume.Mutable<M>> VolumeApplicator<M, Biome, Boolean> applyBiomes() {
+    public static <M extends BiomeVolume.Modifiable<M>> VolumeApplicator<M, Biome, Boolean> applyBiomes() {
         return (volume, element) -> volume.setBiome(element.position(), element.type());
     }
 

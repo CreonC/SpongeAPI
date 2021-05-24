@@ -50,7 +50,7 @@ import java.util.function.Supplier;
 public interface ArchetypeVolume extends BlockVolume.Mutable<ArchetypeVolume>,
     BlockEntityArchetypeVolume.Mutable<ArchetypeVolume>,
     EntityArchetypeVolume.Mutable<ArchetypeVolume>,
-    BiomeVolume.Mutable<ArchetypeVolume> {
+    BiomeVolume.Modifiable<ArchetypeVolume> {
 
     Registry<BlockType> blockStateRegistry();
 

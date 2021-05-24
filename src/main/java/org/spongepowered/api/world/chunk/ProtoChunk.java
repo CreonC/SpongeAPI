@@ -54,7 +54,7 @@ import org.spongepowered.math.vector.Vector3i;
 public interface ProtoChunk<P extends ProtoChunk<P>> extends
     BlockVolume.Mutable<P>,
     BlockEntityVolume.Mutable<P>,
-    BiomeVolume.Mutable<P>,
+    BiomeVolume.Modifiable<P>,
     UpdatableVolume,
     LocationBaseDataHolder.Mutable,
     HeightAwareVolume {
